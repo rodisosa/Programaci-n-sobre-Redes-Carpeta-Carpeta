@@ -1,9 +1,7 @@
 package com.dojan.marinevsorko.utiles;
 
-//import com.badlogic.gdx.graphics.Pixmap;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.Sprite;
-//import com.badlogic.gdx.scenes.scene2d.Actor;
 
 public class Imagen{
 	

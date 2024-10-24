@@ -2,12 +2,16 @@ package com.dojan.marinevsorko.entradas;
 
 import com.badlogic.gdx.Input.Keys;
 import com.badlogic.gdx.InputProcessor;
-import com.dojan.marinevsorko.pantallas.PantallaMenu;
+
+
+import com.dojan.marinevsorko.pantallas.*;
+
 
 public class TecladoMouse implements InputProcessor{
 
-	private boolean arriba = false, abajo = false;
+	private boolean arriba = false, abajo = false, enter = false;
 	PantallaMenu app;
+	
 	
 	
 	
@@ -17,12 +21,14 @@ public class TecladoMouse implements InputProcessor{
 	
 	
 	
+	public boolean isEnter() {
+		return enter;
+	}
+	
 	public boolean isArriba() {
 		return arriba;
 	}
 
-	
-	
 	public boolean isAbajo() {
 		return abajo;
 	}
@@ -34,15 +40,12 @@ public class TecladoMouse implements InputProcessor{
 		
 		app.tiempo = 0;
 		
-		
-		
 		if(keycode == Keys.DOWN) {
 			abajo = true;
-			
-			
 		} else if(keycode == Keys.UP) {
 			arriba = true;
-			
+		} else if(keycode == Keys.ENTER) {
+			enter = true;
 		}
 		
 		return false;
@@ -55,6 +58,8 @@ public class TecladoMouse implements InputProcessor{
 			abajo = false;
 		} else if(keycode == Keys.UP) {
 			arriba = false;
+		} else if (keycode == Keys.ENTER) {
+			enter = false;
 		}
 		
 		return false;

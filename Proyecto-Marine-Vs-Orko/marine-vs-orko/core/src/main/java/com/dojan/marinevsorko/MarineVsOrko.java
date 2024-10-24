@@ -1,11 +1,11 @@
 package com.dojan.marinevsorko;
 
+
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 
 
-import com.dojan.marinevsorko.pantallas.PantallaCarga;
-import com.dojan.marinevsorko.pantallas.PantallaMenu;
+import com.dojan.marinevsorko.pantallas.*;
 import com.dojan.marinevsorko.utiles.*;
 
 public class MarineVsOrko extends Game {
@@ -16,9 +16,10 @@ public class MarineVsOrko extends Game {
     public void create() {
     	Render.app = this;
         Render.batch = new SpriteBatch();
-        //this.setScreen(new PantallaCarga()); 
-        this.setScreen(new PantallaMenu()); 
-
+        Config.iniciarCamara();
+        this.setScreen(new PantallaCarga()); 
+        //this.setScreen(new PantallaMenu());
+        //this.setScreen(new PantallaArena());
     }
 
 
@@ -38,6 +39,7 @@ public class MarineVsOrko extends Game {
     
     @Override
     public void dispose() {
+    	
         Render.batch.dispose();
     }
     

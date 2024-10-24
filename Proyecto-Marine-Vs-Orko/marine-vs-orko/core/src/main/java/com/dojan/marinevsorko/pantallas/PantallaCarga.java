@@ -22,7 +22,6 @@ public class PantallaCarga implements Screen{
 	public void show() {	
 
 		fondo = new Imagen (Recursos.FONDO_CARGA);
-		//fondo.setSize(Config.WIDTH, Config.HEIGHT);
 		b = Render.batch;
 		fondo.setTransparencia(1f);
 	}
@@ -67,8 +66,8 @@ public class PantallaCarga implements Screen{
 
 	@Override
 	public void dispose() {
-		// TODO Auto-generated method stub
-		
+		dispose();
+		b.dispose();
 	}
 	
 	

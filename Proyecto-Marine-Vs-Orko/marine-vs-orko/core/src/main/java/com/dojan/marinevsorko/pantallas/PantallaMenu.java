@@ -9,15 +9,16 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.dojan.marinevsorko.entradas.TecladoMouse;
 import com.dojan.marinevsorko.utiles.*;
 
+
 public class PantallaMenu implements Screen{
 
+	
+	
 	Imagen fondo;
 	SpriteBatch b;
-	
-	Texto opciones[] = new Texto[2];
+	Texto opciones[] = new Texto[3];
 	int opc = 1;
-	String textos[] = {"LOCAL", "ONLINE"};
-	
+	String textos[] = {"LOCAL", "ONLINE", "SALIR"};
 	public float tiempo = 0;
 	
 	TecladoMouse entradas = new TecladoMouse(this);
@@ -58,23 +59,42 @@ public class PantallaMenu implements Screen{
 			if (tiempo > 0.09f) {
 				tiempo = 0;
 				opc++;
-				if( opc > 2) {
+				if( opc > 3) {
 					opc = 1;
 				}
 			}
 		}
-		
-		System.out.println(opc);
-		
+				
 		if(entradas.isArriba()) {
 			if (tiempo > 0.09f) {
 				tiempo = 0;
 				opc--;
 				if( opc < 1) {
-					opc = 2;
+					opc = 3;
 				}
 			}
 		}
+		
+		if(entradas.isEnter()) {
+			
+			if (tiempo > 0.09f) {
+				
+				switch(opc) {
+					case 1:
+					tiempo = 0;
+					Render.app.setScreen(new PantallaArena());
+					break;
+					
+					case 2:
+						break;
+						
+					case 3:
+						Gdx.app.exit();
+						break;
+				}
+			}
+		}	
+		
 		
 		for(int i = 0; i < opciones.length; i++) {
 			
@@ -84,6 +104,7 @@ public class PantallaMenu implements Screen{
 				opciones[i].setColor(Color.WHITE);
 			}
 		}
+		
 		b.end();
 		
 	}
@@ -114,8 +135,13 @@ public class PantallaMenu implements Screen{
 
 	@Override
 	public void dispose() {
-		// TODO Auto-generated method stub
-		
+		dispose();
+		b.dispose();
 	}
+	
+	
+	
+	
+	
 
 }

@@ -1,8 +1,9 @@
 package com.dojan.marinevsorko.lwjgl3;
 
-import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application;
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration;
+
+
 import com.dojan.marinevsorko.MarineVsOrko;
 import com.dojan.marinevsorko.utiles.Config;
 
