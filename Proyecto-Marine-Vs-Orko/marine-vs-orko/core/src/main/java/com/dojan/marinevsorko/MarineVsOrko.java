@@ -1,34 +1,46 @@
 package com.dojan.marinevsorko;
 
-import com.badlogic.gdx.ApplicationAdapter;
-import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.graphics.GL20;
-import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.Game;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
-import com.badlogic.gdx.utils.ScreenUtils;
 
-/** {@link com.badlogic.gdx.ApplicationListener} implementation shared by all platforms. */
-public class MarineVsOrko extends ApplicationAdapter {
-    private SpriteBatch batch;
-    private Texture image;
+
+import com.dojan.marinevsorko.pantallas.PantallaCarga;
+import com.dojan.marinevsorko.pantallas.PantallaMenu;
+import com.dojan.marinevsorko.utiles.*;
+
+public class MarineVsOrko extends Game {
+
+	int y, x;
 
     @Override
     public void create() {
-        batch = new SpriteBatch();
-        image = new Texture("libgdx.png");
+    	Render.app = this;
+        Render.batch = new SpriteBatch();
+        //this.setScreen(new PantallaCarga()); 
+        this.setScreen(new PantallaMenu()); 
+
     }
 
-    @Override
+
+
+	@Override
     public void render() {
-        ScreenUtils.clear(0.15f, 0.15f, 0.2f, 1f);
-        batch.begin();
-        batch.draw(image, 140, 210);
-        batch.end();
+		super.render();
+    }
+	
+	
+	
+    public void update() {
+        
     }
 
+    
+    
     @Override
     public void dispose() {
-        batch.dispose();
-        image.dispose();
+        Render.batch.dispose();
     }
+    
+    
+    
 }
