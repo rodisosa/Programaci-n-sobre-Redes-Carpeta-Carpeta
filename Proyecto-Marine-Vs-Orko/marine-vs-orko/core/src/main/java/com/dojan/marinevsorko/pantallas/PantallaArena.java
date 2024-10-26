@@ -2,12 +2,14 @@ package com.dojan.marinevsorko.pantallas;
 
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.OrthographicCamera;
+import com.badlogic.gdx.graphics.Texture;
+import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.maps.tiled.TiledMap;
+import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
 import com.badlogic.gdx.maps.tiled.TmxMapLoader;
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer;
-
-
+import com.dojan.marinevsorko.personajes.*;
 import com.dojan.marinevsorko.utiles.*;
 
 public class PantallaArena implements Screen {
@@ -18,6 +20,7 @@ public class PantallaArena implements Screen {
 	private TiledMap mapa;
 	private OrthogonalTiledMapRenderer r;
 	
+	private PersonajePrefab jugador;
 	
 	@Override
 	public void show() {
@@ -29,7 +32,9 @@ public class PantallaArena implements Screen {
 		
 		r = new OrthogonalTiledMapRenderer(mapa);
 		
+		jugador = new PersonajePrefab (new Sprite(new Texture("player.png")), (TiledMapTileLayer) mapa.getLayers().get(0));
 		
+		jugador.setPosition(12 * jugador.getCapaColision().getWidth(), 30 * jugador.getCapaColision().getHeight());
 		
 		
 		
@@ -45,6 +50,11 @@ public class PantallaArena implements Screen {
 		
 		r.setView((OrthographicCamera) Config.camara);
 		r.render();
+		
+		
+		r.getBatch().begin();
+		jugador.draw(r.getBatch());
+		r.getBatch().end();
 	}
 
 	@Override
@@ -71,7 +81,7 @@ public class PantallaArena implements Screen {
 	public void dispose() {
 		dispose();
 		r.dispose();
-		
+		jugador.getTexture().dispose();
 	}
 
 }
