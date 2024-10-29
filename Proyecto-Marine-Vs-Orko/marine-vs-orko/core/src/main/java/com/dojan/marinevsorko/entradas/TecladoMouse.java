@@ -9,9 +9,13 @@ import com.dojan.marinevsorko.pantallas.*;
 
 public class TecladoMouse implements InputProcessor{
 
-	private boolean arriba = false, abajo = false, enter = false;
-	PantallaMenu app;
+	private boolean arriba = false, abajo = false, enter = false,
+					w = false, a = false, d = false, x = false, c = false;
+
 	
+
+	PantallaMenu app;
+	PantallaArena app1;
 	
 	
 	
@@ -19,7 +23,9 @@ public class TecladoMouse implements InputProcessor{
 		this.app = app;
 	}
 	
-	
+	public TecladoMouse (PantallaArena app) {
+		this.app1 = app;
+	}
 	
 	public boolean isEnter() {
 		return enter;
@@ -33,20 +39,88 @@ public class TecladoMouse implements InputProcessor{
 		return abajo;
 	}
 
+	//----------------------------------------------------
+	
+	public boolean isW() {
+		return w;
+	}
+
+	public void setW(boolean w) {
+		this.w = w;
+	}
+
+	public boolean isA() {
+		return a;
+	}
+
+	public void setA(boolean a) {
+		this.a = a;
+	}
+
+	public boolean isD() {
+		return d;
+	}
+
+	public void setD(boolean d) {
+		this.d = d;
+	}
+
+	public boolean isX() {
+		return x;
+	}
+
+	public void setX(boolean x) {
+		this.x = x;
+	}
+	
+	public boolean isC() {
+		return c;
+	}
+	
+	public void setC(boolean c) {
+		this.c = c;
+	}
+	
 	
 	
 	@Override
 	public boolean keyDown(int keycode) {
 		
-		app.tiempo = 0;
+		switch(keycode) {
 		
-		if(keycode == Keys.DOWN) {
+		case Keys.DOWN:
 			abajo = true;
-		} else if(keycode == Keys.UP) {
+			break;
+		
+		case Keys.UP:
 			arriba = true;
-		} else if(keycode == Keys.ENTER) {
+			break;
+			
+		case Keys.ENTER:
 			enter = true;
-		}
+			break;
+		
+		case Keys.W:
+			w = true;
+			break;
+	
+		case Keys.A:
+			a = true;
+			break;
+		
+		case Keys.D:
+			d = true;
+			break;
+			
+		case Keys.X:
+			x = true;
+			break;
+		
+		case Keys.C:
+			c = true;
+			break;
+	}
+		
 		
 		return false;
 	}
@@ -54,13 +128,36 @@ public class TecladoMouse implements InputProcessor{
 	@Override
 	public boolean keyUp(int keycode) {
 		
-		if(keycode == Keys.DOWN) {
+		switch(keycode) {
+		
+		case Keys.DOWN:
 			abajo = false;
-		} else if(keycode == Keys.UP) {
+			break;
+		
+		case Keys.UP:
 			arriba = false;
-		} else if (keycode == Keys.ENTER) {
+			break;
+			
+		case Keys.ENTER:
 			enter = false;
-		}
+			break;
+		
+		case Keys.W:
+			w = false;
+			break;
+	
+		case Keys.A:
+			a = false;
+			break;
+		
+		case Keys.D:
+			d = false;
+			break;
+			
+		case Keys.X:
+			x = false;
+			break;
+	}
 		
 		return false;
 	}

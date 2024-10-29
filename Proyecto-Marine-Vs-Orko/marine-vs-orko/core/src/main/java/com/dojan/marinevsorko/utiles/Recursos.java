@@ -12,4 +12,6 @@ public class Recursos {
 	
 	public final static String FUENTE_MENU = "fuentes/fuenteMenu.ttf";
 	
+	public final static String TEXTURAS_MARINE = "sprPj/SpaceMarine/SpaceMarine.png";
+	public final static String ATLAS_MARINE = "sprPj/SpaceMarine/SpaceMarine.atlas";
 }

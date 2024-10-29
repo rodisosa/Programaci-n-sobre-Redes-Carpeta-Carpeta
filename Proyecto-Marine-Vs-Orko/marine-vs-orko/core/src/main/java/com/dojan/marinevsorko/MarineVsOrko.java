@@ -16,6 +16,9 @@ public class MarineVsOrko extends Game {
     public void create() {
     	Render.app = this;
         Render.batch = new SpriteBatch();
+        
+        
+        
         Config.iniciarCamara();
         //this.setScreen(new PantallaCarga()); 
         //this.setScreen(new PantallaMenu());
