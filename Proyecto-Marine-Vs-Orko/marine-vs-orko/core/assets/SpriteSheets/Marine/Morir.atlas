@@ -1,0 +1,76 @@
+
+Morir.png
+size: 1972, 835
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+muerto (1)
+  rotate: false
+  xy: 2, 2
+  size: 490, 225
+  orig: 490, 454
+  offset: 0, 20
+  index: -1
+muerto (2)
+  rotate: false
+  xy: 494, 2
+  size: 490, 255
+  orig: 490, 454
+  offset: 0, 20
+  index: -1
+muerto (3)
+  rotate: false
+  xy: 986, 2
+  size: 490, 275
+  orig: 490, 454
+  offset: 0, 25
+  index: -1
+muerto (4)
+  rotate: false
+  xy: 1478, 2
+  size: 490, 245
+  orig: 490, 454
+  offset: 0, 35
+  index: -1
+muerto (5)
+  rotate: false
+  xy: 2, 279
+  size: 490, 240
+  orig: 490, 454
+  offset: 0, 20
+  index: -1
+muerto (6)
+  rotate: false
+  xy: 494, 279
+  size: 490, 190
+  orig: 490, 454
+  offset: 0, 20
+  index: -1
+muerto (7)
+  rotate: false
+  xy: 986, 279
+  size: 490, 125
+  orig: 490, 454
+  offset: 0, 20
+  index: -1
+muerto (8)
+  rotate: false
+  xy: 1478, 279
+  size: 490, 85
+  orig: 490, 454
+  offset: 0, 20
+  index: -1
+muerto (9)
+  rotate: false
+  xy: 2, 556
+  size: 490, 85
+  orig: 490, 454
+  offset: 0, 20
+  index: -1
+muerto (9.1)
+  rotate: false
+  xy: 494, 556
+  size: 490, 85
+  orig: 490, 454
+  offset: 0, 20
+  index: -1

@@ -1,0 +1,139 @@
+package com.dojan.marinevsorko.entradas;
+
+import com.badlogic.gdx.Input.Keys;
+import com.badlogic.gdx.InputProcessor;
+
+
+import com.dojan.marinevsorko.pantallas.*;
+import com.dojan.marinevsorko.personajes.PersonajePrefab;
+
+
+public class TecladoMouse implements InputProcessor{
+
+	private boolean arriba = false, abajo = false, enter = false,
+					w = false, a = false, d = false, x = false;
+	PantallaMenu app;
+	PersonajePrefab app1;
+	
+	
+	
+	public TecladoMouse (PantallaMenu app) {
+		this.app = app;
+	}
+	
+	public TecladoMouse (PersonajePrefab app) {
+		this.app1 = app;
+	}
+	
+	public boolean isEnter() {
+		return enter;
+	}
+	
+	public boolean isArriba() {
+		return arriba;
+	}
+
+	public boolean isAbajo() {
+		return abajo;
+	}
+
+	
+	
+	@Override
+	public boolean keyDown(int keycode) {
+		
+		switch(keycode) {
+		
+		case Keys.DOWN:
+			abajo = true;
+			break;
+		
+		case Keys.UP:
+			arriba = true;
+			break;
+			
+		case Keys.ENTER:
+			enter = true;
+			break;
+		
+		case Keys.W:
+			w = false;
+			break;
+	
+		case Keys.A:
+			app1.velocidad += app1.rapidez;
+			break;
+		
+		case Keys.D:
+			d = false;
+			break;
+			
+		case Keys.X:
+			x = false;
+			break;
+	}
+		
+		
+		return false;
+	}
+
+	@Override
+	public boolean keyUp(int keycode) {
+		
+		if(keycode == Keys.DOWN) {
+			abajo = false;
+		} else if(keycode == Keys.UP) {
+			arriba = false;
+		} else if (keycode == Keys.ENTER) {
+			enter = false;
+		}
+		
+		return false;
+	}
+
+	@Override
+	public boolean keyTyped(char character) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean touchDown(int screenX, int screenY, int pointer, int button) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean touchUp(int screenX, int screenY, int pointer, int button) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean touchCancelled(int screenX, int screenY, int pointer, int button) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean touchDragged(int screenX, int screenY, int pointer) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean mouseMoved(int screenX, int screenY) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean scrolled(float amountX, float amountY) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	
+	
+	
+	
+}

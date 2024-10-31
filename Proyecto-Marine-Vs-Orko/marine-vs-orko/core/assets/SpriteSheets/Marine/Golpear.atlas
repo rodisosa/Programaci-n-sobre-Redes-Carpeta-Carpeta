@@ -1,0 +1,76 @@
+
+Golpear.png
+size: 1984, 598
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+golpear (1)
+  rotate: false
+  xy: 2, 2
+  size: 394, 230
+  orig: 394, 450
+  offset: 0, 21
+  index: -1
+golpear (9.1)
+  rotate: false
+  xy: 2, 2
+  size: 394, 230
+  orig: 394, 450
+  offset: 0, 21
+  index: -1
+golpear (2)
+  rotate: false
+  xy: 398, 2
+  size: 394, 220
+  orig: 394, 470
+  offset: 0, 10
+  index: -1
+golpear (4)
+  rotate: false
+  xy: 794, 2
+  size: 394, 270
+  orig: 394, 450
+  offset: 0, 21
+  index: -1
+golpear (5)
+  rotate: false
+  xy: 1190, 2
+  size: 394, 295
+  orig: 394, 450
+  offset: 0, 21
+  index: -1
+golpear (6)
+  rotate: false
+  xy: 1586, 2
+  size: 394, 270
+  orig: 394, 450
+  offset: 0, 21
+  index: -1
+golpear (7)
+  rotate: false
+  xy: 2, 299
+  size: 394, 215
+  orig: 394, 450
+  offset: 0, 21
+  index: -1
+golpear (3)
+  rotate: false
+  xy: 2, 299
+  size: 394, 215
+  orig: 394, 450
+  offset: 0, 21
+  index: -1
+golpear (8)
+  rotate: false
+  xy: 398, 299
+  size: 394, 199
+  orig: 394, 470
+  offset: 0, 31
+  index: -1
+golpear (9)
+  rotate: false
+  xy: 794, 299
+  size: 394, 220
+  orig: 394, 450
+  offset: 0, 21
+  index: -1

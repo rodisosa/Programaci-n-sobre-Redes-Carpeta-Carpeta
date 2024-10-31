@@ -1,0 +1,60 @@
+
+
+
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.g2d.Animation;
+import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.badlogic.gdx.graphics.g2d.TextureRegion;
+import com.badlogic.gdx.maps.tiled.TiledMapTileLayer;
+import com.badlogic.gdx.math.Rectangle;
+import com.dojan.marinevsorko.utiles.*;
+
+
+public class Marine extends PersonajePrefab {
+
+     
+
+
+        
+
+
+
+	public Marine(Animation<TextureRegion> est, Animation<TextureRegion> camDer, Animation<TextureRegion> camIzq,
+			Animation<TextureRegion> dis, Animation<TextureRegion> gol, Animation<TextureRegion> dan,
+			Animation<TextureRegion> lev, Animation<TextureRegion> mue, Animation<TextureRegion> fes,
+			TiledMapTileLayer capaColision) {
+		super(est, camDer, camIzq, dis, gol, dan, lev, mue, fes, capaColision);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void setAnimsiones() {
+    
+		textureAtlas = new TextureAtlas("SpriteSheets/Marine/Estatico.atlas");
+		est = new Animation<TextureRegion>(1f/4F, textureAtlas.getRegions());
+
+		textureAtlas = new TextureAtlas("SpriteSheets/Marine/Caminar.atlas");
+		camDer = new Animation<TextureRegion>(1f/8F, textureAtlas.getRegions());
+
+
+		textureAtlas = new TextureAtlas("SpriteSheets/Marine/Disparar.atlas");
+		dis = new Animation<TextureRegion>(1f/3F, textureAtlas.getRegions());
+
+		textureAtlas = new TextureAtlas("SpriteSheets/Marine/Golpear.atlas");
+		gol = new Animation<TextureRegion>(1f/5F, textureAtlas.getRegions());
+    
+		textureAtlas = new TextureAtlas("SpriteSheets/Marine/Dano.atlas");
+		dan = new Animation<TextureRegion>(1f/3F, textureAtlas.getRegions());
+
+		textureAtlas = new TextureAtlas("SpriteSheets/Marine/Morir.atlas");
+		mue = new Animation<TextureRegion>(1f/6F, textureAtlas.getRegions());
+		
+		textureAtlas = new TextureAtlas("SpriteSheets/Marine/Levantar.atlas");
+		lev = new Animation<TextureRegion>(1f/4F, textureAtlas.getRegions());
+
+		textureAtlas = new TextureAtlas("SpriteSheets/Marine/Festejar.atlas");
+		fes = new Animation<TextureRegion>(1f/2F, textureAtlas.getRegions());
+
+	}
+
+    }

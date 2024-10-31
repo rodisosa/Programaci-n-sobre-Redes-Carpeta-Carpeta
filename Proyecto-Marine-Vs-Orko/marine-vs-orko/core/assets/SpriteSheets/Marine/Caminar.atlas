@@ -1,0 +1,83 @@
+
+Caminar.png
+size: 1903, 506
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+camDer (1)
+  rotate: false
+  xy: 2, 2
+  size: 199, 235
+  orig: 310, 404
+  offset: 55, 10
+  index: -1
+camDer (2)
+  rotate: false
+  xy: 213, 2
+  size: 204, 225
+  orig: 310, 404
+  offset: 55, 10
+  index: -1
+camDer (3)
+  rotate: false
+  xy: 424, 2
+  size: 194, 225
+  orig: 310, 404
+  offset: 65, 10
+  index: -1
+camDer (4)
+  rotate: false
+  xy: 635, 2
+  size: 184, 234
+  orig: 310, 404
+  offset: 65, 10
+  index: -1
+camDer (5)
+  rotate: false
+  xy: 846, 2
+  size: 189, 239
+  orig: 310, 404
+  offset: 60, 10
+  index: -1
+camDer (6)
+  rotate: false
+  xy: 1057, 2
+  size: 199, 249
+  orig: 310, 404
+  offset: 60, 10
+  index: -1
+camDer (7)
+  rotate: false
+  xy: 1268, 2
+  size: 194, 229
+  orig: 310, 404
+  offset: 60, 10
+  index: -1
+camDer (8)
+  rotate: false
+  xy: 1479, 2
+  size: 199, 224
+  orig: 310, 404
+  offset: 55, 10
+  index: -1
+camDer (9)
+  rotate: false
+  xy: 1690, 2
+  size: 204, 224
+  orig: 310, 404
+  offset: 60, 10
+  index: -1
+camDer (9.1)
+  rotate: false
+  xy: 2, 253
+  size: 199, 234
+  orig: 310, 404
+  offset: 60, 10
+  index: -1
+camDer (9.2)
+  rotate: false
+  xy: 213, 253
+  size: 209, 239
+  orig: 310, 404
+  offset: 55, 10
+  index: -1

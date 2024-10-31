@@ -1,0 +1,5 @@
+package com.dojan.marinevsorko.lwjgl3;
+
+public class StartupHelper {
+
+}

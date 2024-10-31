@@ -1,0 +1,104 @@
+
+Levantar.png
+size: 1984, 760
+format: RGBA8888
+filter: Nearest, Nearest
+repeat: none
+levantarse (1)
+  rotate: false
+  xy: 2, 2
+  size: 394, 85
+  orig: 394, 404
+  offset: 0, 19
+  index: -1
+levantarse (2)
+  rotate: false
+  xy: 398, 2
+  size: 394, 87
+  orig: 394, 404
+  offset: 0, 19
+  index: -1
+levantarse (3)
+  rotate: false
+  xy: 794, 2
+  size: 394, 125
+  orig: 394, 404
+  offset: 0, 20
+  index: -1
+levantarse (4)
+  rotate: false
+  xy: 1190, 2
+  size: 394, 175
+  orig: 394, 404
+  offset: 0, 20
+  index: -1
+levantarse (5)
+  rotate: false
+  xy: 1586, 2
+  size: 394, 180
+  orig: 394, 404
+  offset: 0, 20
+  index: -1
+levantarse (6)
+  rotate: false
+  xy: 2, 254
+  size: 394, 180
+  orig: 394, 404
+  offset: 0, 20
+  index: -1
+levantarse (7)
+  rotate: false
+  xy: 398, 254
+  size: 394, 190
+  orig: 394, 404
+  offset: 0, 20
+  index: -1
+levantarse (8)
+  rotate: false
+  xy: 794, 254
+  size: 394, 210
+  orig: 394, 404
+  offset: 0, 20
+  index: -1
+levantarse (9)
+  rotate: false
+  xy: 1190, 254
+  size: 394, 230
+  orig: 394, 404
+  offset: 0, 20
+  index: -1
+levantarse (9.1)
+  rotate: false
+  xy: 1586, 254
+  size: 394, 235
+  orig: 394, 404
+  offset: 0, 20
+  index: -1
+levantarse (9.2)
+  rotate: false
+  xy: 2, 506
+  size: 394, 245
+  orig: 394, 404
+  offset: 0, 20
+  index: -1
+levantarse (9.3)
+  rotate: false
+  xy: 398, 506
+  size: 394, 250
+  orig: 394, 404
+  offset: 0, 20
+  index: -1
+levantarse (9.4)
+  rotate: false
+  xy: 794, 506
+  size: 394, 220
+  orig: 394, 404
+  offset: 0, 20
+  index: -1
+levantarse (9.5)
+  rotate: false
+  xy: 1190, 506
+  size: 280, 230
+  orig: 280, 410
+  offset: 0, 20
+  index: -1
