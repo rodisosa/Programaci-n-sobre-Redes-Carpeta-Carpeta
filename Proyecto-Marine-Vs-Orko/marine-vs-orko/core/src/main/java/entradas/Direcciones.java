@@ -10,7 +10,7 @@ public enum Direcciones {
     SELECCIONESCENARIOS("SelecEscc"),
     ESCENARIOS("pantallas.PantallaArena"),
     PELEATERMINADA("pantallas.PeleaTerminada"),
-    SELECCIONPJ("Screens.SeleccionPJ"),
+    SELECCIONPJ("pantallas.SeleccionPJ"),
     CERRAR("cerrar"),
     POSX("POSX"),
     POSY("POSY"),

@@ -1,6 +1,0 @@
-package com.dojan.marinevsorko.utiles;
-
-public interface InputEvent {
-    public void handleInput();
-    
-}

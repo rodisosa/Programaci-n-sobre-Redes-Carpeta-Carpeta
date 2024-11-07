@@ -5,7 +5,9 @@ import personajes.PersonajePrefab;
 public enum Retratos {
     
     SPACEMARINE("retratos/SM.png", "retratos/SM.png", "com.dojan.marinevsorko.personajes.Marine"),
-    ORKO("retratos/ORKO.png", "retratos/ORKO.png", "com.dojan.marinevsorko.personajes.Orko");
+    ORKO("retratos/ORKO.png", "retratos/ORKO.png", "com.dojan.marinevsorko.personajes.Orko"),
+    MARINE("retratos/SM.png", "retratos/SM.png", "com.dojan.marinevsorko.personajes.Marine"),
+    LOKO("retratos/ORKO.png", "retratos/ORKO.png", "com.dojan.marinevsorko.personajes.Orko");
 	
     private String root;
     private String clase;
